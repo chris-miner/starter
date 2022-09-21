@@ -6,19 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Launch App",
-            "request": "launch",
-            "mainClass": "dev.c00a5b70.starter.App",
-            "projectName": "starter"
-        },
-        {
-            "type": "java",
             "name": "grun",
             "request": "launch",
             "mainClass": "org.antlr.v4.gui.TestRig",
@@ -27,6 +14,12 @@
                 "init",
                 "-tokens"
             ]
+        },
+        {
+            "type": "java",
+            "name": "Translate",
+            "request": "launch",
+            "mainClass": "dev.c00a5b70.starter.Translate",
         }
     ]
 }
