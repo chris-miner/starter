@@ -46,13 +46,6 @@
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-maven-plugin</artifactId>
         <version>4.9.3</version>
-        <configuration>
-          <outputDirectory>${project.build.directory}/generated-sources/antlr4/dev/c00a5b70/starter</outputDirectory>
-          <arguments>
-            <argument>-package</argument>
-            <argument>dev.c00a5b70.starter</argument>
-          </arguments>
-        </configuration>
         <executions>
           <execution>
             <id>antlr</id>
