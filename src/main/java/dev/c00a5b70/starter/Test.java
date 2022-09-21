@@ -11,7 +11,7 @@ import org.antlr.v4.runtime.tree.ParseTree;
  * Hello world!
  *
  */
-public class App {
+public class Test {
     public static void main(String[] args) throws IOException {
         CharStream input = CharStreams.fromStream(System.in);
         ArrayInitLexer lexer = new ArrayInitLexer(input);
