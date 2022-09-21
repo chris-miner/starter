@@ -17,6 +17,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.release>11</maven.compiler.release>
   </properties>
 
   <dependencies>
@@ -31,6 +32,12 @@
       <artifactId>antlr4-runtime</artifactId>
       <version>4.9.3</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.antlr/antlr4 -->
+    <dependency>
+        <groupId>org.antlr</groupId>
+        <artifactId>antlr4</artifactId>
+        <version>4.9.3</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -39,6 +46,13 @@
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-maven-plugin</artifactId>
         <version>4.9.3</version>
+        <configuration>
+          <outputDirectory>${project.build.directory}/generated-sources/antlr4/dev/c00a5b70/starter</outputDirectory>
+          <arguments>
+            <argument>-package</argument>
+            <argument>dev.c00a5b70.starter</argument>
+          </arguments>
+        </configuration>
         <executions>
           <execution>
             <id>antlr</id>
